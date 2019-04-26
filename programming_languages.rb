@@ -15,3 +15,6 @@ def reformat_languages(languages)
       end
     end
   end
+
+
+#you have to iterate  through the old hash and reformat it to  a new hash 
