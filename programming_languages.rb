@@ -2,9 +2,7 @@ require 'pry'
 
 
 def reformat_languages(languages)
-  new_hash = {} #:language => {:type => , :style => }
-    #new_hash[:language] = {type: " ", style:" "}
-      languages.each do |oo_or_functional, language_hash|
+  new_hash = {}  
         language_hash.each do |type_name, type_value|
           #binding.pry
           new_hash[type_name][:type] = []
