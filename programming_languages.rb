@@ -10,9 +10,10 @@ def reformat_languages(languages)
             if new_hash[language].nil?
               new_hash[language] || = {}
             end
-
             new_hash[language][:style] ||= []
             new_hash[language][:style] <<  oo_or_functional
+            if new_hash[language][attribute].nil?
+              new_hash[language][attribute] = str_value
 
           end
         end
