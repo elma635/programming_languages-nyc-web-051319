@@ -14,7 +14,7 @@ def reformat_languages(languages)
                 #set it equal to an empty array since it's not assigned a value in the new_hash like it is in the old
                 new_hash[language][:style] <<  oo_or_functional #added oo key from first level of languages hash to this key
               if new_hash[language][attribute].nil?     #if :ruby language key doesn't have a :type key nested within it, bc attribute is parameter set to :type
-              new_hash[language][attribute] = str_value
+              new_hash[language][attribute] = str_value #set that nil :type key to it's string value which is interpreter in one case
             end
           end
         end
