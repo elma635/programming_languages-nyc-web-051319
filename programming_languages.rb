@@ -2,8 +2,7 @@ require 'pry'
 
 
 def reformat_languages(languages)
-  new_hash = {} #:language => {:type => , :style => }
-    #new_hash[:language] = {type: " ", style:" "}
+  new_hash = {} 
       languages.each do |oo_or_functional, language_hash|
         language_hash.each do |language, attr_value|   #:ruby, {:type => "interpreted"}
           attr_value.each do |attribute, str_value| # go into {:type => "interpreted"} & isolate type & "interpreter"
