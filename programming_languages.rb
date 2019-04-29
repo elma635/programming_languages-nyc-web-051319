@@ -12,8 +12,8 @@ def reformat_languages(languages)
                   end
                 new_hash[language][:style] ||= [] #now call whatevers inside the hash, directly call :style key & use pipes as | | = double pipe = reps: “OR, to
                 #set it equal to an empty array since it's not assigned a value in the new_hash like it is in the old
-                new_hash[language][:style] <<  oo_or_functional #push the initial style into the array as a value 
-              if new_hash[language][attribute].nil?
+                new_hash[language][:style] <<  oo_or_functional #added oo key from first level of languages hash to this key
+              if new_hash[language][attribute].nil?     #if :ruby language key doesn't have a :type key nested within it, bc attribute is parameter set to :type
               new_hash[language][attribute] = str_value
             end
           end
