@@ -7,7 +7,7 @@ def reformat_languages(languages)
       languages.each do |oo_or_functional, language_hash|
         language_hash.each do |language, attr_value|   #:ruby, {:type => "interpreted"}
           attr_value.each do |attribute, str_value| # go into {:type => "interpreted"} & isolate type & "interpreter"
-            if new_hash[language].nil?
+            if new_hash[language].nil? #see if new_hash with language is nil (which it is bc its a new hash)
               new_hash[language] = {}
                   end
                 new_hash[language][:style] ||= []
