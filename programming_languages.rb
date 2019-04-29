@@ -10,8 +10,9 @@ def reformat_languages(languages)
             if new_hash[language].nil? #see if new_hash with language is nil (which it is bc its a new hash)
               new_hash[language] = {} #then set it to an empty hash -- inside the block like you set it outside
                   end
-                new_hash[language][:style] ||= []
-                new_hash[language][:style] <<  oo_or_functional
+                new_hash[language][:style] ||= [] #now call whatevers inside the hash, directly call :style key & use pipes as | | = double pipe = reps: “OR, to
+                #set it equal to an empty array since it's not assigned a value in the new_hash like it is in the old
+                new_hash[language][:style] <<  oo_or_functional #push the initial style into the array as a value 
               if new_hash[language][attribute].nil?
               new_hash[language][attribute] = str_value
             end
